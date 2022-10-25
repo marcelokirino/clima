@@ -124,7 +124,7 @@ function pegarSemana(diaDaSemana) {
 //FUNÇÕES
 
 async function getGeoLocation(city) {
-    const apiGeoLocationURL = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${OpenWeatherApiKey}`;
+    const apiGeoLocationURL = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${OpenWeatherApiKey}`;
     const resultado = await fetch(apiGeoLocationURL);
     const data = await resultado.json();
 
@@ -170,7 +170,7 @@ const showWeatherData = async (city) => {
     cityName.innerHTML = cityInput.value;
     dateTime.innerHTML = `${hour}:${minutes} - ${pegarSemana(weekDay)} - ${day} ${pegarMes(month)} ${year}`
     weatherStats.innerHTML = descricao;
-    weatherIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}.png">`
+    weatherIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}.png">`
 
     //Detalhes de hoje
     maxTemp.innerHTML = `${parseInt(showWeather.main.temp_max)}°`
@@ -204,10 +204,10 @@ const showForecast = async (city) => {
     noveTemp.innerHTML = `${parseInt(forecast.list[2].main.temp)}°`
     dozeTemp.innerHTML = `${parseInt(forecast.list[3].main.temp)}°`
     dezoitoTemp.innerHTML = `${parseInt(forecast.list[4].main.temp)}°`
-    tresIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${iconTres}.png">`
-    seisIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${iconSeis}.png">`
-    dozeIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${iconDoze}.png">`
-    dezoitoIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${iconDezoito}.png">`
+    tresIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${iconTres}.png">`
+    seisIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${iconSeis}.png">`
+    dozeIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${iconDoze}.png">`
+    dezoitoIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${iconDezoito}.png">`
 }
 
 
