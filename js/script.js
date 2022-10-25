@@ -168,7 +168,7 @@ const showWeatherData = async (city) => {
     //Insere os dados do tempo na parte principal
     mainTemperature.innerHTML = `${parseInt(showWeather.main.temp)}°`;
     cityName.innerHTML = cityInput.value;
-    dateTime.innerHTML = `${hour}:${minutes} - ${pegarSemana(weekDay)} - ${day} ${pegarMes(month)} ${year}`
+    dateTime.innerHTML = `${zeroEsq(hour)}:${zeroEsq(minutes)} - ${pegarSemana(weekDay)} - ${zeroEsq(day)} ${pegarMes(month)} ${year}`
     weatherStats.innerHTML = descricao;
     weatherIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}.png">`
 
@@ -179,7 +179,7 @@ const showWeatherData = async (city) => {
     skyPercentage.innerHTML = `${showWeather.clouds.all} %`
     humidity.innerHTML = `${showWeather.main.humidity} %`
     wind.innerHTML = `${showWeather.wind.speed} km/h`
-    sunset.innerHTML = `${sunsetTime.getHours()}:${sunsetTime.getMinutes()}h`
+    sunset.innerHTML = `${zeroEsq(sunsetTime.getHours())}:${zeroEsq(sunsetTime.getMinutes())}h`
 
 }
 
@@ -250,4 +250,12 @@ const pegarBackground = async (city) => {
    
 function numeroRandom (min, max) {
     return Math.floor(Math.random() * (max - min +1) + min)
+}
+
+function zeroEsq (num) {
+   if (num >= 10) {
+    return num
+   } else {
+        return `0${num}`;
+   }
 }
