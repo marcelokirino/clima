@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Start Fonts Awesome-->
+        <script src="https://kit.fontawesome.com/6981151dfe.js" crossorigin="anonymous"></script>
+    <!--End Fonts Awesome-->
+    <!--Start Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <!--End Google Fonts-->
+
+    <title>Clima</title>
+</head>
+<body>
+    <div class="global_container">
+        <div class="container">
+            <div class="city_container">
+                <div class="input_container">
+                    <input type="text" name="city" id="city_input" placeholder="Insira uma cidade"> 
+                    <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="city_weather">
+                    <div class="temperature">30°</div>
+                    <div class="city_date_container">
+                        <div class="cityname">Orlando</div>
+                        <div class="date_time">07:30 - Segunda-Feira - 24 Out 22</div>
+                    </div>
+                    <div class="weather_now">
+                        <div class="weather">
+                            Chuvas moderadas
+                        </div>
+                        <div class="weather_icon">
+                            <img src="http://openweathermap.org/img/wn/10d.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast_details_container">
+                <p>Próximas Horas</p>
+                <div class="forecast_container">
+                    <div class="tres_horas">
+                        <div id="treshoras">3H</div>
+                        <div id="treshoras_temp">25°</div>
+                        <div id="treshoras_icon"><img src="http://openweathermap.org/img/wn/10d.png"></div>
+                    </div>
+                    <div class="seis_horas">
+                        <div id="seishoras">6H</div>
+                        <div id="seishoras_temp">25°</div>
+                        <div id="seishoras_icon"><img src="http://openweathermap.org/img/wn/10d.png"></div>
+                    </div>
+                    <div class="nove_horas">
+                        <div id="novehoras">19H</div>
+                        <div id="novehoras_temp">25°</div>
+                        <div id="novehoras_icon"><img src="http://openweathermap.org/img/wn/10d.png"></div>
+                    </div>
+                    <div class="doze_horas">
+                        <div id="dozehoras">12H</div>
+                        <div id="dozehoras_temp">25°</div>
+                        <div id="dozehoras_icon"><img src="http://openweathermap.org/img/wn/10d.png"></div>
+                    </div>
+                    <div class="dezoito_horas">
+                        <div id="dezoitohoras">18H</div>
+                        <div id="dezoitohoras_temp">25°</div>
+                        <div id="dezoitohoras_icon"><img src="http://openweathermap.org/img/wn/10d.png"></div>
+                    </div>
+                    
+                </div>
+                <div class="today_details_container">
+                    <p>Mais detalhes</p>
+                    <div id="max_temp_container">
+                        <div id="max_temp_text">Temperatura Máxima</div>
+                        <div id="max_temp">28°C</div>
+                    </div>
+                    <div id="min_temp_container">
+                        <div id="min_temp_text">Temperatura Mínima</div>
+                        <div id="min_temp">28°C</div>
+                    </div>
+                    <div id="feels_like_temp">
+                        <div id="feels_like">Sensação Térmica</div>
+                        <div id="feel_temp">25°C</div>
+                    </div>
+                    <div id="today_sky">
+                        <div id="sky">
+                            Nuvens
+                        </div>
+                        <div id="sky_percentage">
+                            86%
+                        </div>
+                    </div>
+                    <div id="today_humidity">
+                        <div id="humidity">
+                            Umidade
+                        </div>
+                        <div id="humidity_percentage">
+                            62%
+                        </div>
+                    </div>
+                    <div id="today_wind">
+                        <div id="wind">
+                            Vento
+                        </div>
+                        <div id="wind_speed">
+                            8km/h
+                        </div>
+                    </div>
+                    <div id="today_sunset">
+                        <div id="sunset">
+                            Pôr do Sol
+                        </div>
+                        <div id="sunset_time">
+                            17:00
+                        </div>
+                    </div>
+                </div>
+                <div class="madeby">
+                    <p>Desenvolvido por Marcelo Kirino</p>
+                    <p>OpenWeather API</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
