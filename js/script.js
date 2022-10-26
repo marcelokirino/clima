@@ -194,8 +194,9 @@ const showForecast = async (city) => {
     doze.innerHTML = `${dozeHoras}H`;
     iconTres = forecast.list[0].weather[0].icon
     iconSeis = forecast.list[1].weather[0].icon
-    iconDoze = forecast.list[2].weather[0].icon
-    iconDezoito = forecast.list[3].weather[0].icon
+    iconNove = forecast.list[2].weather[0].icon
+    iconDoze = forecast.list[3].weather[0].icon
+    iconDezoito = forecast.list[4].weather[0].icon
 
 
     dezoito.innerHTML = `${parseInt(dezoitoHoras)}H`;
@@ -206,6 +207,7 @@ const showForecast = async (city) => {
     dezoitoTemp.innerHTML = `${parseInt(forecast.list[4].main.temp)}°`
     tresIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${iconTres}.png">`
     seisIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${iconSeis}.png">`
+    noveIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${iconNove}.png">`
     dozeIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${iconDoze}.png">`
     dezoitoIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${iconDezoito}.png">`
 }
